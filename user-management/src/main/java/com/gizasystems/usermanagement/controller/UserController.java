@@ -1,6 +1,6 @@
 package com.gizasystems.usermanagement.controller;
 
-import com.gizasystems.usermanagement.dto.UserDTO;
+import com.gizasystems.cssdb.dto.UserDTO;
 import com.gizasystems.usermanagement.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

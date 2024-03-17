@@ -1,12 +1,12 @@
 package com.gizasystems.usermanagement.service;
 
-import com.gizasystems.usermanagement.dto.UserDTO;
-import com.gizasystems.usermanagement.entity.User;
+import com.gizasystems.cssdb.dto.UserDTO;
+import com.gizasystems.cssdb.entity.User;
+import com.gizasystems.cssdb.util.Mapper;
 import com.gizasystems.usermanagement.exception.CannotUpdateIdException;
 import com.gizasystems.usermanagement.exception.UserFieldException;
 import com.gizasystems.usermanagement.exception.UserNotFoundException;
 import com.gizasystems.usermanagement.repository.UserRepository;
-import com.gizasystems.usermanagement.util.Mapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

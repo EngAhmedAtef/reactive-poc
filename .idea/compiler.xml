@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user-management" />
         <module name="notification-service" />
+        <module name="css-entity" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="css-demo" options="" />
+      <module name="css-entity" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="user-management" options="-parameters" />
     </option>

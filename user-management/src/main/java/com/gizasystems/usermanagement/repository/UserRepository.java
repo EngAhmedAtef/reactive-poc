@@ -1,6 +1,6 @@
 package com.gizasystems.usermanagement.repository;
 
-import com.gizasystems.usermanagement.entity.User;
+import com.gizasystems.cssdb.entity.User;
 import io.smallrye.mutiny.converters.uni.UniReactorConverters;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.reactive.mutiny.Mutiny;
