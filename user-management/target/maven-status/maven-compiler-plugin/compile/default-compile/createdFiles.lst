@@ -1,8 +1,0 @@
-com\gizasystems\usermanagement\controller\UserController.class
-com\gizasystems\usermanagement\repository\UserRepository.class
-com\gizasystems\usermanagement\exception\UserFieldException.class
-com\gizasystems\usermanagement\exception\CannotUpdateIdException.class
-com\gizasystems\usermanagement\advice\UserControllerAdvice.class
-com\gizasystems\usermanagement\UserManagementApplication.class
-com\gizasystems\usermanagement\exception\UserNotFoundException.class
-com\gizasystems\usermanagement\service\UserService.class

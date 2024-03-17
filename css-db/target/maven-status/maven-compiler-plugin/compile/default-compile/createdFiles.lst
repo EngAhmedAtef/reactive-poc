@@ -1,6 +1,0 @@
-com\gizasystems\cssdb\entity\User.class
-com\gizasystems\cssdb\config\HibernateReactiveConfig.class
-com\gizasystems\cssdb\dto\UserDTO.class
-com\gizasystems\cssdb\dto\NotificationDTO.class
-com\gizasystems\cssdb\util\Mapper.class
-com\gizasystems\cssdb\entity\Notification.class
