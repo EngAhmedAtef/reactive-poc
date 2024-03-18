@@ -29,11 +29,6 @@ public class NotificationController {
         return service.findById(id);
     }
 
-    @PostMapping("users/create/{userId}/{notificationId}")
-    public Mono<UserNotificationDTO> setUserNotification(@PathVariable("userId") Long userId, @PathVariable("notificationId") Long notificationId) {
-        return service.setUserNotification(userId, notificationId);
-    }
-
     @GetMapping("users/{id}")
     public Flux<NotificationDTO> getUserNotifications(@PathVariable("id") Long userID) {
         return service.getUserNotifications(userID);

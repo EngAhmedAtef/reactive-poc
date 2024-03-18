@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/activity-log-service.iml" filepath="$PROJECT_DIR$/activity-log-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/billing-service.iml" filepath="$PROJECT_DIR$/billing-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/notification-service/notification-service.iml" filepath="$PROJECT_DIR$/notification-service/notification-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-management/user-management.iml" filepath="$PROJECT_DIR$/user-management/user-management.iml" />
     </modules>

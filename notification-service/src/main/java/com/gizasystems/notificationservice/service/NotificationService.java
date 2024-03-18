@@ -31,7 +31,7 @@ public class NotificationService {
                 .switchIfEmpty(Mono.error(new NotificationNotFoundException(id)))
                 .map(Mapper::map);
     }
-
+    // TODO Add a listener that executes this method
     public Mono<UserNotificationDTO> setUserNotification(Long userId, Long notificationId) {
         UserNotification userNotification = new UserNotification(
                 null,

@@ -14,7 +14,6 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class NotificationRepository {
     private final Mutiny.SessionFactory sessionFactory;
-    private final WebClient webClient;
 
     public Mono<Notification> createNotification(Notification notification) {
         return sessionFactory.withTransaction(session -> session.persist(notification)

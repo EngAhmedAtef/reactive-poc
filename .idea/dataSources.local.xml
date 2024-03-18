@@ -13,6 +13,10 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
+            <name qname="CSS_ATEF_ACT_MGT" />
+            <name qname="CSS_ATEF_BILL_MGT" />
+            <name qname="CSS_ATEF_NTF_MGT" />
+            <name qname="CSS_ATEF_USR_MGT" />
             <name qname="PUBLIC" />
           </node>
         </introspection-scope>

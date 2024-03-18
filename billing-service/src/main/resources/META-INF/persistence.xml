@@ -10,8 +10,8 @@
             <!-- Connection -->
             <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@192.168.10.58:1522/css.eehc.local"/>
-            <property name="jakarta.persistence.jdbc.user" value="CSS_ATEF_USR_MGT"/>
-            <property name="jakarta.persistence.jdbc.password" value="CSS_ATEF_USR_MGT"/>
+            <property name="jakarta.persistence.jdbc.user" value="CSS_ATEF_BILL_MGT"/>
+            <property name="jakarta.persistence.jdbc.password" value="CSS_ATEF_BILL_MGT"/>
             <!-- Hibernate Settings -->
             <property name="hibernate.jdbc.time_zone" value="UTC"/>
             <property name="hibernate.generate_statistics" value="true"/>

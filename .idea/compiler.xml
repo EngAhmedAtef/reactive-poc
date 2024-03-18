@@ -8,7 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user-management" />
+        <module name="activity-log-service" />
         <module name="notification-service" />
+        <module name="billing-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +19,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activity-log-service" options="-parameters" />
+      <module name="billing-service" options="-parameters" />
       <module name="css-demo" options="" />
       <module name="css-lib" options="" />
       <module name="notification-service" options="-parameters" />
