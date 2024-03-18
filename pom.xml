@@ -27,6 +27,30 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate.reactive</groupId>
+            <artifactId>hibernate-reactive-core</artifactId>
+            <version>2.2.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-oracle-client</artifactId>
+            <version>4.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc11</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye.reactive</groupId>
+            <artifactId>mutiny-reactor</artifactId>
+            <version>2.5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ongres.scram</groupId>
+            <artifactId>client</artifactId>
+            <version>2.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,12 +61,6 @@
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.gizasystems</groupId>
-            <artifactId>css-db</artifactId>
-            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
@@ -76,7 +94,6 @@
     </build>
 
     <modules>
-        <module>css-db</module>
         <module>user-management</module>
         <module>notification-service</module>
     </modules>

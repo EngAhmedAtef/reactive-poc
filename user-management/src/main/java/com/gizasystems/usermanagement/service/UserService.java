@@ -1,12 +1,12 @@
 package com.gizasystems.usermanagement.service;
 
-import com.gizasystems.cssdb.dto.UserDTO;
-import com.gizasystems.cssdb.entity.User;
-import com.gizasystems.cssdb.util.Mapper;
+import com.gizasystems.usermanagement.dto.UserDTO;
+import com.gizasystems.usermanagement.entity.User;
 import com.gizasystems.usermanagement.exception.CannotUpdateIdException;
 import com.gizasystems.usermanagement.exception.UserFieldException;
 import com.gizasystems.usermanagement.exception.UserNotFoundException;
 import com.gizasystems.usermanagement.repository.UserRepository;
+import com.gizasystems.usermanagement.util.Mapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -23,9 +23,6 @@ public class UserService {
 
     public Mono<UserDTO> createUser(UserDTO userDTO) {
         User user = Mapper.map(userDTO);
-        Timestamp currentTimestamp = new Timestamp(System.currentTimeMillis());
-        user.setCreatedOn(currentTimestamp);
-        user.setModifiedOn(currentTimestamp);
 
         String encodedPassword = hashPassword(user.getPassword());
         user.setPassword(encodedPassword);
@@ -56,12 +53,12 @@ public class UserService {
             throw new CannotUpdateIdException();
 
         try {
-            Field field = user.getClass().getDeclaredField(fieldName);
-            field.setAccessible(true);
             if (fieldName.equals("password"))
                 newValue = hashPassword(String.valueOf(newValue));
+
+            Field field = user.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
             field.set(user, newValue);
-            user.setModifiedOn(new Timestamp(System.currentTimeMillis()));
         } catch (NoSuchFieldException | IllegalAccessException e) {
             throw new UserFieldException(fieldName);
         }
