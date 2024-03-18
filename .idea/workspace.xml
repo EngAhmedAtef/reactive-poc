@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ee1b0-5ef5-4415-859c-922623c1840b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/activity-log-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/ActivityLogServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/controller/ActivityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityLogDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityTypeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/repository/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/service/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/util/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/dto/BillDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/entity/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/repository/BillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +164,7 @@
       <workItem from="1710755346464" duration="16000" />
       <workItem from="1710755374443" duration="4997000" />
       <workItem from="1710782208766" duration="7995000" />
-      <workItem from="1710795273777" duration="3645000" />
+      <workItem from="1710795273777" duration="5693000" />
     </task>
     <servers />
   </component>
