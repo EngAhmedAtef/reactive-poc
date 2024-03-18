@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name = "USERS")
@@ -31,4 +32,6 @@ public class User {
     private Timestamp createdOn;
     @Column(name = "MODIFIED_ON")
     private Timestamp modifiedOn;
+    @OneToMany(mappedBy = "user")
+    private List<UserNotification> userNotification;
 }

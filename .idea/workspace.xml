@@ -5,28 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ee1b0-5ef5-4415-859c-922623c1840b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/notification-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/dto/NotificationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/entity/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/test/java/com/gizasystems/notificationservice/NotificationServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/UserManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/util/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/test/java/com/gizasystems/usermanagement/UserManagementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/user-management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/entity/UserNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/advice/NotificationControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/controller/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/exception/NotificationNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/entity/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/entity/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/src/main/java/com/gizasystems/cssdb/util/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/entity/Notification.class" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/entity/Notification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/util/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/css-db/target/classes/com/gizasystems/cssdb/util/Mapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "build.tools",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -113,7 +111,7 @@
       <command value="mvn clean install package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserManagementApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationServiceApplication">
     <configuration name="NotificationServiceApplicationTests.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="notification-service" />
       <extension name="coverage">
@@ -171,7 +169,8 @@
       <workItem from="1710540423081" duration="90000" />
       <workItem from="1710540523769" duration="16042000" />
       <workItem from="1710622603152" duration="1820000" />
-      <workItem from="1710629952538" duration="6362000" />
+      <workItem from="1710629952538" duration="6616000" />
+      <workItem from="1710702513227" duration="18619000" />
     </task>
     <servers />
   </component>
@@ -191,5 +190,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/notification-service" />
+      <path value="$PROJECT_DIR$/user-management" />
+    </ignored-roots>
   </component>
 </project>

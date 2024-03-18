@@ -1,6 +1,8 @@
 package com.gizasystems.cssdb.util;
 
+import com.gizasystems.cssdb.dto.NotificationDTO;
 import com.gizasystems.cssdb.dto.UserDTO;
+import com.gizasystems.cssdb.entity.Notification;
 import com.gizasystems.cssdb.entity.User;
 
 public final class Mapper {
@@ -25,7 +27,25 @@ public final class Mapper {
                 dto.getUserEmail(),
                 dto.getPassword(),
                 dto.getCreatedOn(),
-                dto.getModifiedOn()
+                dto.getModifiedOn(),
+                null
+        );
+    }
+
+    public static Notification map(NotificationDTO dto) {
+        return new Notification(
+                dto.getNotificationId(),
+                dto.getNotificationEn(),
+                dto.getNotificationAr(),
+                null
+        );
+    }
+
+    public static NotificationDTO map(Notification notification) {
+        return new NotificationDTO(
+                notification.getNotificationId(),
+                notification.getNotificationEn(),
+                notification.getNotificationAr()
         );
     }
 

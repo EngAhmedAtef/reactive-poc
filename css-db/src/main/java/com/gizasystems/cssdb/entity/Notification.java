@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "NOTIFICATIONS")
 @Getter
@@ -21,5 +23,7 @@ public class Notification {
     private String notificationEn;
     @Column(name = "NOTIFICATION_AR")
     private String notificationAr;
+    @OneToMany(mappedBy = "notification")
+    private List<UserNotification> userNotification;
 }
 
