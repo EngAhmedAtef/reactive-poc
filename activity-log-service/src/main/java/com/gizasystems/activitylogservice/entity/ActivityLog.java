@@ -11,7 +11,6 @@ import java.sql.Timestamp;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class ActivityLog {
     @Id
     @Column(name = "ID")

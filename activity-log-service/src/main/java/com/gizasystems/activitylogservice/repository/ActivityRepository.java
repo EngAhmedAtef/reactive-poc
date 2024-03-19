@@ -16,13 +16,12 @@ public class ActivityRepository {
 
     public Mono<ActivityType> createActivityType(ActivityType activityType) {
         return sessionFactory.withTransaction(session -> session.persist(activityType)
-                        .chain(session::flush)
                         .replaceWith(activityType))
                 .convert().with(UniReactorConverters.toMono());
     }
 
     public Flux<ActivityType> findAllActivityTypes() {
-        return sessionFactory.withSession(session -> session.createQuery("from ActivityType ", ActivityType.class)
+        return sessionFactory.withSession(session -> session.createQuery("from ActivityType", ActivityType.class)
                         .getResultList()).convert().with(UniReactorConverters.toFlux())
                 .flatMap(Flux::fromIterable);
     }
@@ -38,7 +37,6 @@ public class ActivityRepository {
 
     public Mono<ActivityLog> logActivity(ActivityLog activityLog) {
         return sessionFactory.withTransaction(session -> session.persist(activityLog)
-                        .chain(session::flush)
                         .replaceWith(activityLog))
                 .convert().with(UniReactorConverters.toMono());
     }

@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Type;
 
 import java.sql.Timestamp;
 
@@ -27,4 +28,9 @@ public class Bill {
     private Boolean paid;
     @Column(name = "CREATED_ON")
     private Timestamp createdOn;
+
+    @PrePersist
+    private void prePersist() {
+        createdOn = new Timestamp(System.currentTimeMillis());
+    }
 }

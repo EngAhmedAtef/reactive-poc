@@ -38,7 +38,10 @@ public class UserController {
         return service.update(id, "password", newPassword);
     }
 
-    // TODO: Pay the bill
+    @PutMapping("{userId}/bills/pay")
+    public Mono<String> payBill(@PathVariable("userId") Long userId, @RequestParam("id") Long billId) {
+        return service.payBill(userId, billId);
+    }
 
     // TODO: GetUserNotification
 

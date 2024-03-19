@@ -51,6 +51,16 @@
             <artifactId>client</artifactId>
             <version>2.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-artemis</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gizasystems</groupId>
+            <artifactId>css-lib</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -94,6 +104,7 @@
     </build>
 
     <modules>
+        <module>css-lib</module>
         <module>user-management</module>
         <module>notification-service</module>
         <module>activity-log-service</module>

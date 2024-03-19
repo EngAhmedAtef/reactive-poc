@@ -15,7 +15,6 @@ public class UserRepository {
 
     public Mono<User> createUser(User user) {
         return sessionFactory.withTransaction(session -> session.persist(user)
-                        .chain(session::flush)
                         .replaceWith(user))
                 .convert().with(UniReactorConverters.toMono());
     }
@@ -33,7 +32,6 @@ public class UserRepository {
 
     public Mono<User> update(User user) {
         return sessionFactory.withTransaction(session -> session.merge(user)
-                        .chain(session::flush)
                         .replaceWith(user))
                 .convert().with(UniReactorConverters.toMono());
     }

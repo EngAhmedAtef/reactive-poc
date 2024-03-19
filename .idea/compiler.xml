@@ -7,15 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="css-lib" />
         <module name="user-management" />
         <module name="activity-log-service" />
         <module name="notification-service" />
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="css-lib" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -15,14 +15,12 @@ public class BillRepository {
 
     public Mono<Bill> createBill(Bill bill) {
         return sessionFactory.withTransaction(session -> session.persist(bill)
-                        .chain(session::flush)
                         .replaceWith(bill))
                 .convert().with(UniReactorConverters.toMono());
     }
 
     public Mono<Bill> updateBill(Bill bill) {
         return sessionFactory.withTransaction(session -> session.merge(bill)
-                        .chain(session::flush)
                         .replaceWith(bill))
                 .convert().with(UniReactorConverters.toMono());
     }

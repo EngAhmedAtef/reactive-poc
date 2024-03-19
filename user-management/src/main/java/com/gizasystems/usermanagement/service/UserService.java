@@ -1,25 +1,30 @@
 package com.gizasystems.usermanagement.service;
 
+import com.gizasystems.csslib.enums.PaymentStatus;
+import com.gizasystems.csslib.dto.PaymentRequestDTO;
+
 import com.gizasystems.usermanagement.dto.UserDTO;
 import com.gizasystems.usermanagement.entity.User;
+import com.gizasystems.csslib.enums.ArtemisTopics;
 import com.gizasystems.usermanagement.exception.CannotUpdateIdException;
 import com.gizasystems.usermanagement.exception.UserFieldException;
 import com.gizasystems.usermanagement.exception.UserNotFoundException;
 import com.gizasystems.usermanagement.repository.UserRepository;
 import com.gizasystems.usermanagement.util.Mapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.lang.reflect.Field;
-import java.sql.Timestamp;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository repository;
+    private final JmsTemplate jmsTemplate;
 
     public Mono<UserDTO> createUser(UserDTO userDTO) {
         User user = Mapper.map(userDTO);
@@ -69,5 +74,10 @@ public class UserService {
     private String hashPassword(String password) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         return encoder.encode(password);
+    }
+
+    public Mono<String> payBill(Long userId, Long billId) {
+        jmsTemplate.convertAndSend(ArtemisTopics.USER_BILL.topic(), new PaymentRequestDTO(billId, userId, PaymentStatus.INITIATED));
+        return Mono.just("Request has been sent. You'll get notified after it's complete.");
     }
 }
