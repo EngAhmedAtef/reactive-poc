@@ -2,6 +2,7 @@ package com.gizasystems.usermanagement.dto;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 @NoArgsConstructor
@@ -9,7 +10,7 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 @ToString
-public class UserDTO {
+public class UserDTO implements Serializable {
     private Long userId;
     private String usernameEn;
     private String usernameAr;

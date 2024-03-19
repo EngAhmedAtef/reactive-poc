@@ -5,62 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ee1b0-5ef5-4415-859c-922623c1840b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/JmsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/enums/ActivityTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/listener/ActivityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/JmsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/listener/PaymentListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/dto/PaymentRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/enums/ArtemisTopics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/enums/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/enums/NotificationMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/JmsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/listener/NotificationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/96251597-fb97-42cb-a897-46c7fc056781.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/activity-log-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/entity/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/repository/BillRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/css-lib/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/NotificationServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/NotificationServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/controller/NotificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/repository/NotificationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/repository/NotificationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/service/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/service/NotificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/test-classes/com/gizasystems/usermanagement/UserManagementApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/user-management-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/user-management-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,11 +97,11 @@
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\notification-service\src\main\java\com\gizasystems\notificationservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gizasystems.activitylogservice.config" />
+      <recent name="com.gizasystems.billingservice.config" />
+      <recent name="com.gizasystems.notificationservice.config" />
       <recent name="com.gizasystems.csslib.enums" />
       <recent name="com.gizasystems.usermanagement.enums" />
-      <recent name="com.gizasystems.usermanagement.dto" />
-      <recent name="com.gizasystems.billingservice.config" />
-      <recent name="com.gizasystems.activitylogservice.config" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -237,7 +189,7 @@
       <workItem from="1710795273777" duration="13968000" />
       <workItem from="1710817267246" duration="4622000" />
       <workItem from="1710822274156" duration="2435000" />
-      <workItem from="1710825021121" duration="2068000" />
+      <workItem from="1710825021121" duration="3318000" />
     </task>
     <servers />
   </component>
