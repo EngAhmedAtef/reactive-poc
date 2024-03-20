@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ee1b0-5ef5-4415-859c-922623c1840b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/PasswordResetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/UpdateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/enums/ActivityTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/enums/ActivityTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/enums/ActivityTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/enums/ActivityTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/util/Mapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <command value="mvn clean install package" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserManagementApplication">
+  <component name="RunManager" selected="Spring Boot.ActivityLogServiceApplication">
     <configuration name="NotificationServiceApplicationTests.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="notification-service" />
       <extension name="coverage">
@@ -189,7 +190,8 @@
       <workItem from="1710795273777" duration="13968000" />
       <workItem from="1710817267246" duration="4622000" />
       <workItem from="1710822274156" duration="2435000" />
-      <workItem from="1710825021121" duration="3318000" />
+      <workItem from="1710825021121" duration="3528000" />
+      <workItem from="1710932770769" duration="738000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 package com.gizasystems.usermanagement.util;
 
-import com.gizasystems.usermanagement.dto.UserDTO;
+import com.gizasystems.usermanagement.model.dto.UserDTO;
 import com.gizasystems.usermanagement.entity.User;
 
 public final class Mapper {

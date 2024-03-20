@@ -1,6 +1,8 @@
 package com.gizasystems.usermanagement.controller;
 
-import com.gizasystems.usermanagement.dto.UserDTO;
+import com.gizasystems.usermanagement.model.PasswordResetRequest;
+import com.gizasystems.usermanagement.model.UpdateRequest;
+import com.gizasystems.usermanagement.model.dto.UserDTO;
 import com.gizasystems.usermanagement.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -28,14 +30,14 @@ public class UserController {
         return service.findById(id);
     }
 
-    @PutMapping("{id}/{field}/{value}")
-    public Mono<UserDTO> updateUser(@PathVariable("id") Long id, @PathVariable("field") String fieldName, @PathVariable("value") Object newValue) {
-        return service.update(id, fieldName, newValue);
+    @PutMapping("{id}")
+    public Mono<UserDTO> updateUser(@PathVariable("id") Long id, @RequestBody UpdateRequest updateRequest) {
+        return service.update(id, updateRequest.getField(), updateRequest.getValue());
     }
 
-    @PutMapping("{id}/reset/{value}")
-    public Mono<UserDTO> resetPassword(@PathVariable("id") Long id, @PathVariable("value") String newPassword) {
-        return service.update(id, "password", newPassword);
+    @PutMapping("{id}/reset")
+    public Mono<UserDTO> resetPassword(@PathVariable("id") Long id, @RequestBody PasswordResetRequest resetRequest) {
+        return service.update(id, "password", resetRequest.getValue());
     }
 
     @PutMapping("{userId}/bills/pay")

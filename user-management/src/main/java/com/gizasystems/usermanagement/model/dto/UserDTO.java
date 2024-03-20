@@ -1,4 +1,4 @@
-package com.gizasystems.usermanagement.dto;
+package com.gizasystems.usermanagement.model.dto;
 
 import lombok.*;
 

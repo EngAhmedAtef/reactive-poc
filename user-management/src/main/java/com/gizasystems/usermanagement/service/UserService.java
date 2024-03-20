@@ -3,7 +3,7 @@ package com.gizasystems.usermanagement.service;
 import com.gizasystems.csslib.enums.PaymentStatus;
 import com.gizasystems.csslib.dto.PaymentRequestDTO;
 
-import com.gizasystems.usermanagement.dto.UserDTO;
+import com.gizasystems.usermanagement.model.dto.UserDTO;
 import com.gizasystems.usermanagement.entity.User;
 import com.gizasystems.csslib.enums.ArtemisTopics;
 import com.gizasystems.usermanagement.exception.CannotUpdateIdException;
