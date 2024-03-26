@@ -17,6 +17,26 @@
     <name>css-demo</name>
     <description>css-demo</description>
 
+    <properties>
+        <app.version>1.0.0</app.version>
+        <deployment.folder>CSS_${app.version}</deployment.folder>
+        <build.path.directory>${user.dir}/../${deployment.folder}</build.path.directory>
+        <current.environment>local</current.environment>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>complete</id>
+            <modules>
+                <module>common</module>
+                <module>microservices</module>
+            </modules>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,7 +44,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,7 +82,7 @@
         </dependency>
         <dependency>
             <groupId>com.gizasystems</groupId>
-            <artifactId>css-lib</artifactId>
+            <artifactId>common</artifactId>
             <version>1.0.0</version>
         </dependency>
 
@@ -104,15 +124,56 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.coderplus.maven.plugins</groupId>
+                <artifactId>copy-rename-maven-plugin</artifactId>
+                <version>1.0</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <id>copy-rename-docker-compose-and-environment</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <fileSets>
+                                <fileSet>
+                                    <sourceFile>./src/main/resources/docker-compose-${project.activeProfiles[0].id}-${current.environment}-ms.yaml</sourceFile>
+                                    <destinationFile>${build.path.directory}/ms/docker-compose.yaml</destinationFile>
+                                </fileSet>
+                                <fileSet>
+                                    <sourceFile>./src/main/resources/environment/environment-${current.environment}-ms.env</sourceFile>
+                                    <destinationFile>${build.path.directory}/ms/.env</destinationFile>
+                                </fileSet>
+                            </fileSets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>delete-old-build-folder</id>
+                        <inherited>false</inherited>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <delete dir="${build.path.directory}"/>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
-    <modules>
-        <module>css-lib</module>
-        <module>user-management</module>
-        <module>notification-service</module>
-        <module>activity-log-service</module>
-        <module>billing-service</module>
-    </modules>
 
 </project>

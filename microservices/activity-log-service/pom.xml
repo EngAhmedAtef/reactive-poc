@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.gizasystems</groupId>
+        <artifactId>microservices</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>activity</artifactId>
+
+    <properties>
+        <packaging.outputDirectory>${build.path.directory}/ms/microservices/${project.artifactId}</packaging.outputDirectory>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <finalName>${project.artifactId}-service</finalName>
+                    <outputDirectory>${packaging.outputDirectory}</outputDirectory>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>default-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                    <resources>
+                        <resource>
+                            <directory>src/main/resources</directory>
+                            <filtering>true</filtering>
+                            <excludes>
+                                <exclude>application.properties</exclude>
+                                <exclude>application-local.properties</exclude>
+                                <exclude>logback.xml</exclude>
+                            </excludes>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.coderplus.maven.plugins</groupId>
+                <artifactId>copy-rename-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-configurations</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <fileSets>
+                        <fileSet>
+                            <sourceFile>./src/main/resources/application-${current.environment}.properties</sourceFile>
+                            <destinationFile>${project.build.outputDirectory}/application.properties</destinationFile>
+                        </fileSet>
+                        <fileSet>
+                            <sourceFile>./src/main/resources/docker/Dockerfile</sourceFile>
+                            <destinationFile>${packaging.outputDirectory}/Dockerfile</destinationFile>
+                        </fileSet>
+                        <fileSet>
+                            <sourceFile>./src/main/resources/docker/entrypoint.sh</sourceFile>
+                            <destinationFile>${packaging.outputDirectory}/entrypoint.sh</destinationFile>
+                        </fileSet>
+                    </fileSets>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>delete-docker-folder</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <delete dir="${project.build.outputDirectory}/docker"/>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,47 @@
+version: "3.8"
+
+networks:
+  css_network_dev_microservices:
+    driver: bridge
+
+services:
+  user-management:
+    build:
+      context: ./microservices/user-management
+      dockerfile: Dockerfile
+      args:
+        - PORT=$USER_MANAGEMENT_SERVICE_PORT
+    image: user-management:css
+    container_name: user-management_c
+    environment:
+      - ENTRY_POINT=$USER_MANAGEMENT_ENTRY_POINT
+  notification:
+    build:
+      context: ./microservices/notification
+      dockerfile: Dockerfile
+      args:
+        - PORT=$NOTIFICATION_SERVICE_PORT
+    image: notification:css
+    container_name: notification_c
+    environment:
+      - ENTRY_POINT=$NOTIFICATION_ENTRY_POINT
+  billing:
+    build:
+      context: ./microservices/billing
+      dockerfile: Dockerfile
+      args:
+        - PORT=$BILLING_SERVICE_PORT
+    image: billing:css
+    container_name: billing_c
+    environment:
+      - ENTRY_POINT=$BILLING_ENTRY_POINT
+  activity:
+    build:
+      context: ./microservices/activity
+      dockerfile: Dockerfile
+      args:
+        - PORT=$ACTIVITY_SERVICE_PORT
+    image: activity:css
+    container_name: activity_c
+    environment:
+      - ENTRY_POINT=$ACTIVITY_ENTRY_POINT

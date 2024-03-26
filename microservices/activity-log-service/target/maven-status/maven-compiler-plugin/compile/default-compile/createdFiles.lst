@@ -1,0 +1,15 @@
+com\gizasystems\activitylogservice\config\HibernateReactiveConfig.class
+com\gizasystems\activitylogservice\entity\ActivityLog.class
+com\gizasystems\activitylogservice\service\ActivityService.class
+com\gizasystems\activitylogservice\listener\ActivityListener.class
+com\gizasystems\activitylogservice\entity\ActivityType.class
+com\gizasystems\activitylogservice\repository\ActivityRepository.class
+com\gizasystems\activitylogservice\util\Mapper.class
+com\gizasystems\activitylogservice\listener\ActivityListener$1.class
+com\gizasystems\activitylogservice\ActivityLogServiceApplication.class
+com\gizasystems\activitylogservice\controller\ActivityController.class
+com\gizasystems\activitylogservice\dto\ActivityLogDTO.class
+com\gizasystems\activitylogservice\dto\ActivityTypeDTO.class
+com\gizasystems\activitylogservice\enums\ActivityTypes.class
+com\gizasystems\activitylogservice\config\JmsConfig.class
+com\gizasystems\activitylogservice\config\RedisConfig.class

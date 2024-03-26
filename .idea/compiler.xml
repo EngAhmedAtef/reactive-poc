@@ -7,20 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="css-lib" />
+        <module name="notification" />
+        <module name="common" />
+        <module name="activity" />
         <module name="user-management" />
-        <module name="activity-log-service" />
-        <module name="notification-service" />
-        <module name="billing-service" />
+        <module name="billing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="activity-log-service" target="17" />
+      <module name="billing-service" target="17" />
+      <module name="notification-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="activity" options="-parameters" />
       <module name="activity-log-service" options="-parameters" />
+      <module name="billing" options="-parameters" />
       <module name="billing-service" options="-parameters" />
+      <module name="common" options="" />
       <module name="css-demo" options="" />
-      <module name="css-lib" options="" />
+      <module name="microservices" options="" />
+      <module name="notification" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="user-management" options="-parameters" />
     </option>

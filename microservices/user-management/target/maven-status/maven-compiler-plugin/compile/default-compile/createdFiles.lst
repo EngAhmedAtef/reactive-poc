@@ -1,0 +1,17 @@
+com\gizasystems\usermanagement\config\RedisConfig.class
+com\gizasystems\usermanagement\infrastructure\MessageSender.class
+com\gizasystems\usermanagement\model\dto\UserDTO.class
+com\gizasystems\usermanagement\repository\UserRepository.class
+com\gizasystems\usermanagement\exception\CannotUpdateIdException.class
+com\gizasystems\usermanagement\entity\User.class
+com\gizasystems\usermanagement\config\JmsConfig.class
+com\gizasystems\usermanagement\util\Mapper.class
+com\gizasystems\usermanagement\controller\UserController.class
+com\gizasystems\usermanagement\config\HibernateReactiveConfig.class
+com\gizasystems\usermanagement\exception\UserFieldException.class
+com\gizasystems\usermanagement\advice\UserControllerAdvice.class
+com\gizasystems\usermanagement\model\UpdateRequest.class
+com\gizasystems\usermanagement\UserManagementApplication.class
+com\gizasystems\usermanagement\model\PasswordResetRequest.class
+com\gizasystems\usermanagement\exception\UserNotFoundException.class
+com\gizasystems\usermanagement\service\UserService.class
