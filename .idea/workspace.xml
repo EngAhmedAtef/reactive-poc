@@ -5,212 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5ee1b0-5ef5-4415-859c-922623c1840b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/gizasystems/common/dto/CreateUserMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/gizasystems/common/enums/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/resources/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/resources/docker/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/infrastructure/MessageSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/resources/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/resources/docker/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/resources/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/resources/docker/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/infrastructure/MessageSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/docker/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/docker-compose-complete-local-ms.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/environment/environment-local-ms.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/ActivityLogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/ActivityLogServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/HibernateReactiveConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/controller/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityLogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityLogDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityTypeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/dto/ActivityTypeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/entity/ActivityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/enums/ActivityTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/enums/ActivityTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/listener/ActivityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/listener/ActivityListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/service/ActivityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/java/com/gizasystems/activitylogservice/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/java/com/gizasystems/activitylogservice/util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/activity-log-service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/activity-log-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/ActivityLogServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/ActivityLogServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/HibernateReactiveConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/HibernateReactiveConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/JmsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/controller/ActivityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/dto/ActivityLogDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/dto/ActivityLogDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/dto/ActivityTypeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/dto/ActivityTypeDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/entity/ActivityLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/entity/ActivityLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/entity/ActivityType.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/entity/ActivityType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/enums/ActivityTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/enums/ActivityTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/listener/ActivityListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/listener/ActivityListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/listener/ActivityListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/listener/ActivityListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/repository/ActivityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/repository/ActivityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/service/ActivityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/service/ActivityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/classes/com/gizasystems/activitylogservice/util/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/classes/com/gizasystems/activitylogservice/util/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-log-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/activity-log-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/BillingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/BillingServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/advice/NotificationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/advice/NotificationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/HibernateReactiveConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/controller/BillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/dto/BillDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/dto/BillDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/entity/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/exception/BillNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/exception/BillNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/listener/PaymentListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/repository/BillRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/service/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/service/BillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/java/com/gizasystems/billingservice/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/java/com/gizasystems/billingservice/util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/billing-service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/billing-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/BillingServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/BillingServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/advice/NotificationControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/advice/NotificationControllerAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/config/HibernateReactiveConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/config/HibernateReactiveConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/config/JmsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/controller/BillController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/controller/BillController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/dto/BillDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/dto/BillDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/entity/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/entity/Bill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/exception/BillNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/exception/BillNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/listener/PaymentListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/repository/BillRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/repository/BillRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/service/BillService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/service/BillService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/classes/com/gizasystems/billingservice/util/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/classes/com/gizasystems/billingservice/util/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/billing-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/dto/PaymentRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/gizasystems/common/dto/PaymentRequestMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/enums/ArtemisTopics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/src/main/java/com/gizasystems/csslib/enums/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/gizasystems/common/enums/PaymentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/classes/com/gizasystems/csslib/dto/PaymentRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/classes/com/gizasystems/csslib/enums/ArtemisTopics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/classes/com/gizasystems/csslib/enums/PaymentStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/css-lib-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/notification-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/notification-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/enums/NotificationMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/enums/NotificationMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/NotificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/advice/NotificationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/advice/NotificationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/HibernateReactiveConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/dto/NotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/dto/NotificationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/dto/UserNotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/dto/UserNotificationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/entity/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/entity/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/entity/UserNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/entity/UserNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/exception/NotificationNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/exception/NotificationNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/listener/NotificationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/listener/NotificationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/repository/NotificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/gizasystems/notificationservice/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/java/com/gizasystems/notificationservice/util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/test/java/com/gizasystems/notificationservice/NotificationServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/src/test/java/com/gizasystems/notificationservice/NotificationServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/enums/NotificationMessages.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/enums/NotificationMessages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/NotificationServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/NotificationServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/advice/NotificationControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/advice/NotificationControllerAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/config/HibernateReactiveConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/config/HibernateReactiveConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/config/JmsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/controller/NotificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/dto/NotificationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/dto/NotificationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/dto/UserNotificationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/dto/UserNotificationDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/entity/Notification.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/entity/Notification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/entity/UserNotification.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/entity/UserNotification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/exception/NotificationNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/exception/NotificationNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/listener/NotificationListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/listener/NotificationListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/listener/NotificationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/listener/NotificationListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/repository/NotificationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/repository/NotificationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/service/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/service/NotificationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/classes/com/gizasystems/notificationservice/util/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/classes/com/gizasystems/notificationservice/util/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/notification-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/target/test-classes/com/gizasystems/notificationservice/NotificationServiceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/notification-service/target/test-classes/com/gizasystems/notificationservice/NotificationServiceApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/UserManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/UserManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/advice/UserControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/advice/UserControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/HibernateReactiveConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/config/HibernateReactiveConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/JmsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/config/JmsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/exception/CannotUpdateIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/exception/CannotUpdateIdException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/exception/UserFieldException.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/exception/UserFieldException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/exception/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/exception/UserNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/PasswordResetRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/model/PasswordResetRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/UpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/model/UpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/model/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/model/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/com/gizasystems/usermanagement/util/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/util/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/src/test/java/com/gizasystems/usermanagement/UserManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/test/java/com/gizasystems/usermanagement/UserManagementApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/UserManagementApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/UserManagementApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/advice/UserControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/advice/UserControllerAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/config/HibernateReactiveConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/config/HibernateReactiveConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/config/JmsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/config/JmsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/exception/CannotUpdateIdException.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/exception/CannotUpdateIdException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/exception/UserFieldException.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/exception/UserFieldException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/exception/UserNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/exception/UserNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/model/PasswordResetRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/model/PasswordResetRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/model/UpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/model/UpdateRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/model/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/model/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/classes/com/gizasystems/usermanagement/util/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/util/Mapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/resources/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user-management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/user-management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/src/main/java/com/gizasystems/usermanagement/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user-management/target/classes/com/gizasystems/usermanagement/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,51 +50,52 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ahmed.abdelmaksoud/IdeaProjects/css-demo/microservices/activity-log-service/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/ahmed.abdelmaksoud/IdeaProjects/css-demo/microservices/user-management/src/main/resources/elk/src/templates/configs/logstash/logstash.conf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;oracle&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\user-management\src\main\resources\elk\src\templates\configs\logstash\logstash.conf" />
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\activity-log-service\src\main\resources" />
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\billing-service\src\main\resources" />
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\notification-service\src\main\resources" />
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\user-management\src\main\resources" />
-      <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\billing-service\src\main\java\com\gizasystems\billingservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\user-management\src\main\resources" />
       <recent name="C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -407,7 +208,7 @@
       <workItem from="1711370946311" duration="14988000" />
       <workItem from="1711402457350" duration="161000" />
       <workItem from="1711403544748" duration="6943000" />
-      <workItem from="1711415684659" duration="3496000" />
+      <workItem from="1711415684659" duration="8540000" />
     </task>
     <servers />
   </component>
@@ -416,6 +217,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

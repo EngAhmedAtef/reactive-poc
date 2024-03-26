@@ -39,7 +39,7 @@ public class UserService {
 
         String encodedPassword = hashPassword(user.getPassword());
         user.setPassword(encodedPassword);
-
+        log.info("Called createUser(). Username English: {}, Username Arabic: {}", userDTO.getUsernameEn(), userDTO.getUsernameAr());
         return repository.createUser(user)
                 .doOnSuccess(dbUser ->
                         messageSender.sendMessage(
@@ -51,10 +51,12 @@ public class UserService {
     }
 
     public Flux<UserDTO> findAll() {
+        log.info("Called findAll()");
         return repository.findAll().map(Mapper::map);
     }
 
     public Mono<UserDTO> findById(Long id) {
+        log.info("Called findById. ID: {}", id);
         return redisTemplate.opsForValue().get(String.format("student:%d", id))
                 .switchIfEmpty(
                         repository.findById(id)
@@ -66,6 +68,7 @@ public class UserService {
     }
 
     public Mono<UserDTO> update(Long id, String fieldName, Object newValue) {
+        log.info("Updating user id {}. Target field: {}.", id, fieldName);
         return repository.findById(id).switchIfEmpty(Mono.error(new UserNotFoundException(id)))
                 .flatMap(user -> {
                     User updatedUser = updateUser(user, fieldName, newValue);
@@ -97,6 +100,7 @@ public class UserService {
     }
 
     public Mono<Object> payBill(Long userId, Long billId) {
+        log.info("User id {} is playing bill id {}", userId, billId);
         messageSender.sendMessage("atef.css.user", new PaymentRequestMessage(billId, userId, PaymentStatus.INITIATED), "event", Event.PAY_BILL_REQUEST.title());
         return webClient.get()
                 .uri(BILL_SERVICE_URL + String.format("/users/%d/pay/%d", userId, billId))

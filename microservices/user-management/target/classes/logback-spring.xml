@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOGS" value="./logs/account-management-logs"/>
+    <property name="patternValue" value="%d{yyyy-MM-dd HH:mm:ss.SSS} - [%thread] - [%X{traceId:-},%X{spanId:-}]-%L-[%logger.%M] - %msg%n"/>
+
+
+    <appender name="Console-Appender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${patternValue}</pattern>
+        </encoder>
+    </appender>
+
+        <appender name="File-Appender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <append>true</append>
+            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                <pattern>${patternValue}</pattern>
+            </encoder>
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <fileNamePattern>${LOGS}/rolling-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+                <maxFileSize>1024KB</maxFileSize>
+                <totalSizeCap>5GB</totalSizeCap>
+            </rollingPolicy>
+        </appender>
+
+    <appender name="STASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>logstash:5000</destination>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+
+    <logger name="com.gizasystems.usermanagement" level="${LOGGER_LEVEL:-INFO}" additivity="false">
+        <appender-ref ref="Console-Appender" />
+        <appender-ref ref="File-Appender" />
+        <appender-ref ref="STASH" />
+    </logger>
+
+    <root level="${ROOT_LEVEL:-WARN}">
+        <appender-ref ref="Console-Appender" />
+    </root>
+</configuration>

@@ -66,7 +66,7 @@
 							<excludes>
 								<exclude>application.properties</exclude>
 								<exclude>application-local.properties</exclude>
-								<exclude>logback.xml</exclude>
+								<exclude>logback-spring.xml</exclude>
 							</excludes>
 						</resource>
 					</resources>
@@ -99,6 +99,10 @@
 						<fileSet>
 							<sourceFile>./src/main/resources/docker/entrypoint.sh</sourceFile>
 							<destinationFile>${packaging.outputDirectory}/entrypoint.sh</destinationFile>
+						</fileSet>
+						<fileSet>
+							<sourceFile>./src/main/resources/logback-spring.xml</sourceFile>
+							<destinationFile>${project.build.outputDirectory}/logback-spring.xml</destinationFile>
 						</fileSet>
 					</fileSets>
 				</configuration>

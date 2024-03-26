@@ -12,6 +12,14 @@
     <artifactId>microservices</artifactId>
     <packaging>pom</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>5.3</version>
+        </dependency>
+    </dependencies>
+
     <modules>
         <module>user-management</module>
         <module>notification-service</module>

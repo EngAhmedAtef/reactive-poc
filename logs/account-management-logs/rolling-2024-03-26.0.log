@@ -1,0 +1,8 @@
+2024-03-26 06:17:24.643 - [main] - [,]-50-[com.gizasystems.usermanagement.UserManagementApplication.logStarting] - Starting UserManagementApplication using Java 17.0.8 with PID 11836 (C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo\microservices\user-management\target\classes started by ahmed.abdelmaksoud in C:\Users\ahmed.abdelmaksoud\IdeaProjects\css-demo)
+2024-03-26 06:17:24.646 - [main] - [,]-660-[com.gizasystems.usermanagement.UserManagementApplication.logStartupProfileInfo] - The following 1 profile is active: "local"
+2024-03-26 06:17:30.170 - [main] - [,]-56-[com.gizasystems.usermanagement.UserManagementApplication.logStarted] - Started UserManagementApplication in 8.626 seconds (process running for 9.259)
+2024-03-26 06:18:46.780 - [reactor-http-nio-3] - [,]-42-[com.gizasystems.usermanagement.service.UserService.createUser] - Called createUser(). Username English: Ahmed 2, Username Arabic: احمد عاطف
+2024-03-26 06:18:49.472 - [vert.x-eventloop-thread-1] - [,]-19-[com.gizasystems.usermanagement.infrastructure.MessageSender.sendMessage] - Published a message to atef.css.user
+2024-03-26 06:19:12.233 - [reactor-http-nio-3] - [,]-71-[com.gizasystems.usermanagement.service.UserService.update] - Updating user id 69. Target field: usernameEn.
+2024-03-26 06:19:16.903 - [reactor-http-nio-3] - [,]-54-[com.gizasystems.usermanagement.service.UserService.findAll] - Called findAll()
+2024-03-26 06:19:22.035 - [reactor-http-nio-3] - [,]-59-[com.gizasystems.usermanagement.service.UserService.findById] - Called findById. ID: 69
