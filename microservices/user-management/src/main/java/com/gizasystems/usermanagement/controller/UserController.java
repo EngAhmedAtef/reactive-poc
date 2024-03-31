@@ -1,10 +1,12 @@
 package com.gizasystems.usermanagement.controller;
 
+import com.gizasystems.common.model.dto.BillDTO;
 import com.gizasystems.usermanagement.model.PasswordResetRequest;
 import com.gizasystems.usermanagement.model.UpdateRequest;
 import com.gizasystems.usermanagement.model.dto.UserDTO;
 import com.gizasystems.usermanagement.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -21,8 +23,11 @@ public class UserController {
     }
 
     @GetMapping
-    public Flux<UserDTO> getUsers() {
-        return service.findAll();
+    public Flux<UserDTO> getUsers(@RequestParam(defaultValue = "0") int page,
+                                  @RequestParam(defaultValue = "0") int offset,
+                                  @RequestParam(defaultValue = "10") int size,
+                                  @RequestParam("keyword") String keyword) {
+        return service.findAll(keyword, PageRequest.of(page * size + offset, size));
     }
 
     @GetMapping("{id}")
@@ -41,7 +46,7 @@ public class UserController {
     }
 
     @PutMapping("{userId}/bills/pay")
-    public Mono<Object> payBill(@PathVariable("userId") Long userId, @RequestParam("id") Long billId) {
+    public Mono<BillDTO> payBill(@PathVariable("userId") Long userId, @RequestParam("id") Long billId) {
         return service.payBill(userId, billId);
     }
 

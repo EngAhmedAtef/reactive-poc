@@ -2,8 +2,8 @@ package com.gizasystems.activitylogservice.listener;
 
 import com.gizasystems.activitylogservice.enums.ActivityTypes;
 import com.gizasystems.activitylogservice.service.ActivityService;
-import com.gizasystems.common.dto.CreateUserMessage;
-import com.gizasystems.common.dto.PaymentRequestMessage;
+import com.gizasystems.common.model.CreateUserMessage;
+import com.gizasystems.common.model.PaymentRequestMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

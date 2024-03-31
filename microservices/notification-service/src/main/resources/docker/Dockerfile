@@ -2,7 +2,7 @@ FROM openjdk:17-alpine
 
 ARG PORT
 
-RUN adduser -S notificationmanagement -G css
+RUN addgroup -f css && adduser notificationmanagement -g css
 
 WORKDIR /home/notificationmanagement/app
 RUN mkdir logs

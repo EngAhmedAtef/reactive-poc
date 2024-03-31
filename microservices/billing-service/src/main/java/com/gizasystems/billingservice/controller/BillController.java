@@ -1,6 +1,6 @@
 package com.gizasystems.billingservice.controller;
 
-import com.gizasystems.billingservice.dto.BillDTO;
+import com.gizasystems.common.model.dto.BillDTO;
 import com.gizasystems.billingservice.service.BillService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

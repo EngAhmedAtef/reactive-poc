@@ -3,7 +3,7 @@ FROM openjdk:17-alpine
 ARG PORT
 ARG MODULE_NAME
 
-RUN adduser -S activitylogservice -G css
+RUN groupadd -f css && useradd activitylogservice -g css
 
 WORKDIR /home/activitylogservice/app
 RUN mkdir logs

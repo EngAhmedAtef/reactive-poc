@@ -1,13 +1,12 @@
 package com.gizasystems.billingservice.service;
 
-import com.gizasystems.billingservice.config.JmsConfig;
-import com.gizasystems.billingservice.dto.BillDTO;
+import com.gizasystems.common.model.dto.BillDTO;
 import com.gizasystems.billingservice.entity.Bill;
 import com.gizasystems.billingservice.exception.BillNotFoundException;
 import com.gizasystems.billingservice.infrastructure.MessageSender;
 import com.gizasystems.billingservice.repository.BillRepository;
 import com.gizasystems.billingservice.util.Mapper;
-import com.gizasystems.common.dto.PaymentRequestMessage;
+import com.gizasystems.common.model.PaymentRequestMessage;
 import com.gizasystems.common.enums.Event;
 import com.gizasystems.common.enums.PaymentStatus;
 import lombok.RequiredArgsConstructor;

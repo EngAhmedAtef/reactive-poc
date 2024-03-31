@@ -1,0 +1,45 @@
+# Maven build directories
+target/
+*/target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+*.class
+
+# Logs
+logs/
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Spring Boot Application Configuration
+application.properties
+application.yml
+application.yaml
+
+# Dependencies
+lib/
+*.jar
+*.war
+
+# Gradle specific
+.gradle/
+
+# Maven specific
+.mvn/
+
+# IDE-specific
+.vscode/
+
+# Miscellaneous
+*.zip
+*.gz
+*.tar
+*.rar
+*.swp

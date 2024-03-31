@@ -3,7 +3,7 @@ FROM openjdk:17-alpine
 ARG PORT
 ARG MODULE_NAME
 
-RUN adduser -S billingservice -G css
+RUN addgroup -f css && adduser billingservice -g css
 
 WORKDIR /home/billingservice/app
 RUN mkdir logs

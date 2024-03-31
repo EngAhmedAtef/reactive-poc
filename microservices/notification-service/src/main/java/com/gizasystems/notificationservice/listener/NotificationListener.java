@@ -1,7 +1,7 @@
 package com.gizasystems.notificationservice.listener;
 
-import com.gizasystems.common.dto.CreateUserMessage;
-import com.gizasystems.common.dto.PaymentRequestMessage;
+import com.gizasystems.common.model.CreateUserMessage;
+import com.gizasystems.common.model.PaymentRequestMessage;
 import com.gizasystems.enums.NotificationMessages;
 import com.gizasystems.notificationservice.service.NotificationService;
 import lombok.RequiredArgsConstructor;

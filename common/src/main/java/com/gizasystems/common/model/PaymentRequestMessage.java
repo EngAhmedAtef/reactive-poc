@@ -1,4 +1,4 @@
-package com.gizasystems.common.dto;
+package com.gizasystems.common.model;
 
 import com.gizasystems.common.enums.PaymentStatus;
 import lombok.AllArgsConstructor;

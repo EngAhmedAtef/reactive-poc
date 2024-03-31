@@ -1,7 +1,8 @@
 package com.gizasystems.usermanagement.service;
 
-import com.gizasystems.common.dto.CreateUserMessage;
-import com.gizasystems.common.dto.PaymentRequestMessage;
+import com.gizasystems.common.model.dto.BillDTO;
+import com.gizasystems.common.model.CreateUserMessage;
+import com.gizasystems.common.model.PaymentRequestMessage;
 import com.gizasystems.common.enums.Event;
 import com.gizasystems.common.enums.PaymentStatus;
 import com.gizasystems.usermanagement.entity.User;
@@ -14,6 +15,7 @@ import com.gizasystems.usermanagement.repository.UserRepository;
 import com.gizasystems.usermanagement.util.Mapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -50,9 +52,9 @@ public class UserService {
                 .map(Mapper::map);
     }
 
-    public Flux<UserDTO> findAll() {
+    public Flux<UserDTO> findAll(String keyword, Pageable pageable) {
         log.info("Called findAll()");
-        return repository.findAll().map(Mapper::map);
+        return repository.findAll(keyword, pageable).map(Mapper::map);
     }
 
     public Mono<UserDTO> findById(Long id) {
@@ -99,12 +101,12 @@ public class UserService {
         return encoder.encode(password);
     }
 
-    public Mono<Object> payBill(Long userId, Long billId) {
+    public Mono<BillDTO> payBill(Long userId, Long billId) {
         log.info("User id {} is playing bill id {}", userId, billId);
         messageSender.sendMessage("atef.css.user", new PaymentRequestMessage(billId, userId, PaymentStatus.INITIATED), "event", Event.PAY_BILL_REQUEST.title());
         return webClient.get()
                 .uri(BILL_SERVICE_URL + String.format("/users/%d/pay/%d", userId, billId))
                 .retrieve()
-                .bodyToMono(Object.class);
+                .bodyToMono(BillDTO.class);
     }
 }

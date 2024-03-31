@@ -1,4 +1,5 @@
 com\gizasystems\common\enums\PaymentStatus.class
 com\gizasystems\common\dto\CreateUserMessage.class
 com\gizasystems\common\dto\PaymentRequestMessage.class
+com\gizasystems\common\dto\BillDTO.class
 com\gizasystems\common\enums\Event.class

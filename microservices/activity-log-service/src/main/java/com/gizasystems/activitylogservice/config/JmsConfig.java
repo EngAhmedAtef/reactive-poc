@@ -1,5 +1,6 @@
 package com.gizasystems.activitylogservice.config;
 
+import jakarta.annotation.PostConstruct;
 import jakarta.jms.ConnectionFactory;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,6 +22,11 @@ public class JmsConfig {
     private String brokerUrl;
     private String user;
     private String password;
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("BROKER URL: " + brokerUrl);
+    }
 
     @Bean
     public ActiveMQConnectionFactory connectionFactory() {

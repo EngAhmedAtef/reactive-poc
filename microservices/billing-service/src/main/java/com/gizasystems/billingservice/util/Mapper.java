@@ -1,6 +1,6 @@
 package com.gizasystems.billingservice.util;
 
-import com.gizasystems.billingservice.dto.BillDTO;
+import com.gizasystems.common.model.dto.BillDTO;
 import com.gizasystems.billingservice.entity.Bill;
 
 public final class Mapper {

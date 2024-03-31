@@ -1,4 +1,4 @@
-package com.gizasystems.common.dto;
+package com.gizasystems.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

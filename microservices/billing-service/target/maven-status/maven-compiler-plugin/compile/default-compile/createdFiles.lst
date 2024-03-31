@@ -10,4 +10,3 @@ com\gizasystems\billingservice\controller\BillController.class
 com\gizasystems\billingservice\util\Mapper.class
 com\gizasystems\billingservice\entity\Bill.class
 com\gizasystems\billingservice\infrastructure\MessageSender.class
-com\gizasystems\billingservice\dto\BillDTO.class

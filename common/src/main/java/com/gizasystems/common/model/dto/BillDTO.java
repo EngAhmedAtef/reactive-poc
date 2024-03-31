@@ -1,4 +1,4 @@
-package com.gizasystems.billingservice.dto;
+package com.gizasystems.common.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

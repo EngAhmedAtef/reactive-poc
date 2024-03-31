@@ -2,7 +2,7 @@ FROM openjdk:17-alpine
 
 ARG PORT
 
-RUN addgroup -S css && adduser -S usermanagement -G css
+RUN addgroup -s css && adduser usermanagement -g css
 
 WORKDIR /home/usermanagement/app
 RUN mkdir logs
