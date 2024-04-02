@@ -26,7 +26,7 @@ public class UserController {
     public Flux<UserDTO> getUsers(@RequestParam(defaultValue = "0") int page,
                                   @RequestParam(defaultValue = "0") int offset,
                                   @RequestParam(defaultValue = "10") int size,
-                                  @RequestParam("keyword") String keyword) {
+                                  @RequestParam(defaultValue = "") String keyword) {
         return service.findAll(keyword, PageRequest.of(page * size + offset, size));
     }
 
